@@ -1,0 +1,85 @@
+@font-face {
+    font-family: poppinsRegular;
+    src: url("../assets/fonts/poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: poppinsBold;
+    src: url("../assets/fonts/poppins/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: poppinsLight;
+    src: url("../assets/fonts/poppins/Poppins-Light.ttf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppinsRegular;
+}
+
+// navigation bar
+.navbar {
+    padding: 18px !important;
+    .container {
+        .navbar-brand {
+            font-family: poppinsBold;
+            text-transform: uppercase;
+        }
+        .offcanvas {
+            .offcanvas-body {
+                ul > li {
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}
+
+//main div
+.main {
+    //hero image section
+    .hero-bg {
+        background: url("../assets/images/background/hero-bg.png") no-repeat top;
+        background-size: cover;
+        height: 92vh;
+        margin-bottom: 100px;
+        .container {
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: end;
+
+            .text-banner {
+                .display-1 {
+                    font-family: poppinsBold;
+                    text-transform: uppercase;
+                }
+                h4 {
+                    font-family: poppinsLight;
+                }
+                .button-group {
+                    margin-top: 50px;
+
+                    button {
+                        padding: 10px 30px;
+                        margin-right: 50px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    //grid items
+    .grid-pics {
+        .container {
+        }
+    }
+}
+
+// SCSS MODIFICATION FOR THEMING
+// $primary: #22262a;
+
+// @import "../assets/bootstrap/scss/bootstrap.scss";

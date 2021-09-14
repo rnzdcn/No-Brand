@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="./assets/bootstrap/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="./css/index.css" />
+        <title>No Brand</title>
+    </head>
+    <body>
+        <!-- navigation  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasLeft"
+                    aria-controls="offcanvasLeft"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">No Brand</a>
+
+                <div
+                    class="offcanvas offcanvas-start"
+                    id="offcanvasLeft"
+                    tabindex="-1"
+                    aria-labelledby="offcanvasLeftLabel"
+                    data-bs-scroll="true"
+                    data-bs-backdrop="false"
+                >
+                    <div class="offcanvas-header">
+                        <form class="d-flex d-md-flex d-lg-none">
+                            <input
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                            />
+                            <button
+                                class="btn btn-outline-success"
+                                type="submit"
+                            >
+                                Search
+                            </button>
+                        </form>
+                        <button
+                            type="button"
+                            class="btn-close text-reset ms-auto"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li
+                        class="
+                            nav-item
+                            mx-3
+                            d-md-none d-lg-block d-sm-none d-md-block
+                        "
+                    >
+                        <a class="nav-link" aria-current="page" href="#"
+                            ><i class="fas fa-search"></i
+                        ></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"
+                            ><i class="fas fa-shopping-cart"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- main section  -->
+        <div class="main">
+            <!-- hero image section  -->
+            <section class="hero-bg">
+                <div class="container">
+                    <div class="text-banner">
+                        <h4 class="text-uppercase">New Trend</h4>
+                        <div class="display-1">Collusion</div>
+                        <h4>An exclusive selection of this season's trends</h4>
+
+                        <div class="button-group">
+                            <button class="btn btn-primary" type="button">
+                                Discover
+                            </button>
+                            <button class="btn btn-primary" type="button">
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- grid pictures  -->
+            <section class="grid-pics">
+                <div class="container"></div>
+            </section>
+        </div>
+    </body>
+    <script src="./assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./assets/fonts/fontawesome/js/brands.js"></script>
+    <script src="./assets/fonts/fontawesome/js/solid.js"></script>
+    <script src="./assets/fonts/fontawesome/js/fontawesome.js"></script>
+</html>
