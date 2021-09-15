@@ -24,7 +24,7 @@
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">No Brand</a>
+                <a class="navbar-brand" href="#">No <span>Brand</span></a>
 
                 <div
                     class="offcanvas offcanvas-start"
@@ -35,7 +35,15 @@
                     data-bs-backdrop="false"
                 >
                     <div class="offcanvas-header">
-                        <form class="d-flex d-md-flex d-lg-none">
+                        <button
+                            type="button"
+                            class="btn-close text-reset ms-auto"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="d-flex d-md-flex d-lg-none mb-2">
                             <input
                                 class="form-control me-2"
                                 type="search"
@@ -49,14 +57,6 @@
                                 Search
                             </button>
                         </form>
-                        <button
-                            type="button"
-                            class="btn-close text-reset ms-auto"
-                            data-bs-dismiss="offcanvas"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="offcanvas-body">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a
@@ -78,6 +78,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                     <li
                         class="
@@ -86,7 +87,10 @@
                             d-md-none d-lg-block d-sm-none d-md-block
                         "
                     >
-                        <a class="nav-link" aria-current="page" href="#"
+                        <a
+                            class="nav-link search-icon-item"
+                            aria-current="page"
+                            href="#"
                             ><i class="fas fa-search"></i
                         ></a>
                     </li>
@@ -123,7 +127,320 @@
 
             <!-- grid pictures  -->
             <section class="grid-pics">
-                <div class="container"></div>
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="
+                                col-12 col-xxl-6 col-lg-12 col-md-6
+                                d-md-flex
+                                align-items-md-center
+                            "
+                        >
+                            <div class="row gy-4">
+                                <div
+                                    class="top-div col-12 col-xxl-12 col-lg-12"
+                                >
+                                    <img
+                                        src="./assets/images/grid-image/grid-pic-top.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="lower-div col-12 col-xxl-12">
+                                    <div class="row">
+                                        <div
+                                            class="
+                                                lower-sub-div
+                                                col-6 col-xxl-6
+                                            "
+                                        >
+                                            <img
+                                                src="./assets/images/grid-image/grid-pic-lower-left.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                            />
+                                        </div>
+                                        <div
+                                            class="
+                                                lower-sub-div
+                                                col-6 col-xxl-6
+                                            "
+                                        >
+                                            <img
+                                                src="./assets/images/grid-image/grid-pic-lower-right.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="
+                                upper-right-div
+                                col-12 col-xxl-6 col-md-6
+                                d-lg-none d-xxl-block d-sm-none d-md-block
+                            "
+                        >
+                            <img
+                                src="./assets/images/grid-image/grid-pic-upper-right.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- womens fashion section  -->
+            <section class="womens-fashion-section">
+                <div class="container">
+                    <div class="text-center">
+                        <h2>Women's Fashion</h2>
+                        <h5>Shop our new arrivals from establish brands</h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-xxl-3 col-xl-3 col-lg-3">
+                            <div class="card" >
+                                <img
+                                    src="./assets/images/products/womens-fashion/white-hat.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h6 class="uppercase-text">Iguera</h6>
+                                        <h6 class="strong-text">Green Muscle Fit Polo Shirt</h6>
+                                        <h6><del>$29.00</del> <span class="text-danger">$19.00</span></h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xxl-3 col-xl-3 col-lg-3">
+                            <div class="card" >
+                                <img
+                                    src="./assets/images/products/womens-fashion/assasin-style.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h6 class="uppercase-text">Iguera</h6>
+                                        <h6 class="strong-text">Green Muscle Fit Polo Shirt</h6>
+                                        <h6><del>$29.00</del> <span class="text-danger">$19.00</span></h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xxl-3 col-xl-3 col-lg-3">
+                            <div class="card" >
+                                <img
+                                    src="./assets/images/products/womens-fashion/korean-style.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h6 class="uppercase-text">Iguera</h6>
+                                        <h6 class="strong-text">Green Muscle Fit Polo Shirt</h6>
+                                        <h6><del>$29.00</del> <span class="text-danger">$19.00</span></h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xxl-3 col-xl-3 col-lg-3">
+                            <div class="card" >
+                                <img
+                                    src="./assets/images/products/womens-fashion/sweat-shirt.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h6 class="uppercase-text">Iguera</h6>
+                                        <h6 class="strong-text">Green Muscle Fit Polo Shirt</h6>
+                                        <h6><del>$29.00</del> <span class="text-danger">$19.00</span></h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- mens fashion section  -->
+             <section class="mens-fashion-section">
+                <div class="container">
+                    <div class="text-center">
+                        <h2>Men's Fashion</h2>
+                        <h5>Shop our new arrivals from establish brands</h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-xxl-3 col-xl-3 col-lg-3">
+                            <div class="card" >
+                                <img
+                                    src="./assets/images/products/mens-fashion/casual-shirt.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h6 class="uppercase-text">Iguera</h6>
+                                        <h6 class="strong-text">Green Muscle Fit Polo Shirt</h6>
+                                        <h6><del>$29.00</del> <span class="text-danger">$19.00</span></h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xxl-3 col-xl-3 col-lg-3">
+                            <div class="card" >
+                                <img
+                                    src="./assets/images/products/mens-fashion/sleeve-white-shirt.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h6 class="uppercase-text">Iguera</h6>
+                                        <h6 class="strong-text">Green Muscle Fit Polo Shirt</h6>
+                                        <h6><del>$29.00</del> <span class="text-danger">$19.00</span></h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xxl-3 col-xl-3 col-lg-3">
+                            <div class="card" >
+                                <img
+                                    src="./assets/images/products/mens-fashion/semi-formal.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h6 class="uppercase-text">Iguera</h6>
+                                        <h6 class="strong-text">Green Muscle Fit Polo Shirt</h6>
+                                        <h6><del>$29.00</del> <span class="text-danger">$19.00</span></h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xxl-3 col-xl-3 col-lg-3">
+                            <div class="card" >
+                                <img
+                                    src="./assets/images/products/mens-fashion/red-sleeve.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h6 class="uppercase-text">Iguera</h6>
+                                        <h6 class="strong-text">Green Muscle Fit Polo Shirt</h6>
+                                        <h6><del>$29.00</del> <span class="text-danger">$19.00</span></h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- cta section  -->
+            <section class="cta-section">
+                <div class="container">
+                    <div class="text-banner">
+                        <h4 class="text-uppercase">Own the day</h4>
+                        <div class="display-1">Tachen 19</div>
+                        <h4 class="text-uppercase">Shop collection</h4>
+
+                        <div class="button-group">
+                            <button class="btn btn-primary" type="button">
+                                shop collection
+                            </button> 
+                      
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer section  -->
+            <section class="footer-section">
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-xxl-5 col-xl-6 col-md-12 col-sm-12 col-xs-12" >
+                                <div class="footer-logo-description">
+                                    <h3>No brand</h3>
+                                    <h6>We earned a reputation of being good at what we do. Let us take your online shop to new dimension in success</h6>
+                                </div>
+                                <div class="footer-address">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-map-marker-alt"></i> Dasmariñas, Cavite</li>
+                                        <li><i class="fas fa-envelope"></i> nobrand@gmail.com</li>
+                                        <li><i class="fas fa-phone"></i> 09123456789</li>
+                                    </ul>
+                                    <div class="social-media-icons ">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fab fa-facebook"></i> </li>
+                                            <li><i class="fab fa-instagram"></i> </li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fab fa-github"></i> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xxl-7 col-xl-6 col-md-12 col-sm-12 col-xs-12" >
+                                <div class="footer-email-updates">
+                                    <h3>Receive email updates</h3>
+                                    <form action="">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Your Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <button class="btn" type="button" id="button-addon2">Join</button>
+                                          </div>
+                                    </form>
+                                </div>
+                                <div class="row d-flex justify-content-xxl-between ">
+                                    <div class="col-4 col-xxl-3 ">
+                                        <h3>shop</h3>
+                                        <ul class="list-unstyled">
+                                            <li>Shop</li>
+                                            <li>Collections</li>
+                                            <li>Outlets</li>
+                                            <li>Lookbooks</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 col-xxl-3">
+                                        <h3>help</h3>
+                                        <ul class="list-unstyled">
+                                            <li>FAQ</li>
+                                            <li>Privacy Policy</li>
+                                            <li>Terms & Conditions</li>
+                                            <li>Returns & Exchanges</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 col-xxl-3">
+                                        <h3>about</h3>
+                                        <ul class="list-unstyled">
+                                            <li>Journal</li>
+                                            <li>Our Story</li>
+                                            <li>Contact</li>
+                                            <li>Store Location</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="container copyright text-center">
+                            <small>Copyright &#169 2021. No Brand. All rights reserved</small>
+                        </div>
+                    </div>
+                </footer>
             </section>
         </div>
     </body>
@@ -131,4 +448,6 @@
     <script src="./assets/fonts/fontawesome/js/brands.js"></script>
     <script src="./assets/fonts/fontawesome/js/solid.js"></script>
     <script src="./assets/fonts/fontawesome/js/fontawesome.js"></script>
+
+    <script src="./js/main.js"></script>
 </html>
