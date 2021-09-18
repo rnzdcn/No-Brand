@@ -20,10 +20,11 @@ body {
 
 // navigation bar
 nav {
-    position: fixed !important;
-    width: 100%;
-    transition: background 0.5s ease;
+    position: sticky !important;
+    width: 100% !important;
+    transition: background 0.5s;
     z-index: 10;
+    top: 0;
 }
 nav.scrolled {
     background: white !important;
@@ -31,11 +32,18 @@ nav.scrolled {
 }
 .navbar {
     padding: 18px !important;
+
     .container {
         .navbar-brand {
             font-family: poppinsBold;
             text-transform: uppercase;
         }
+        .navbar-toggler:focus {
+            text-decoration: none;
+            outline: 0;
+            box-shadow: none;
+        }
+
         .offcanvas {
             .offcanvas-body {
                 ul > li {
@@ -52,7 +60,7 @@ nav.scrolled {
     .hero-bg {
         background: url("../assets/images/background/hero-bg.png") no-repeat top;
         background-size: cover;
-        height: 100vh;
+        height: 92vh;
         margin-bottom: 100px;
         .container {
             height: inherit;
@@ -203,7 +211,7 @@ nav.scrolled {
 
     //footer section
     .footer-section {
-        background-color: #f2f8fc;
+        background-color: white;
 
         footer {
             .container {
@@ -266,11 +274,15 @@ nav.scrolled {
                 }
             }
             .container-fluid {
-                background: #e7f5f8;
-                padding: 20px 0;
+                // background: #f2f8fc;
+                padding: 10px 0;
             }
         }
     }
+}
+
+//Modal for sign in
+.modal {
 }
 
 //MEDIA QUERIES
@@ -369,7 +381,7 @@ nav.scrolled {
 
         //footer section
         .footer-section {
-            background-color: #f2f8fc;
+            background-color: white;
 
             footer {
                 .container {
@@ -440,8 +452,8 @@ nav.scrolled {
                     }
                 }
                 .container-fluid {
-                    background: #e7f5f8;
-                    padding: 20px 0;
+                    // background: #f2f8fc;
+                    padding: 10px 0;
                 }
             }
         }
@@ -542,7 +554,7 @@ nav.scrolled {
 
         //footer section
         .footer-section {
-            background-color: #f2f8fc;
+            background-color: white;
 
             footer {
                 .container {
@@ -612,7 +624,7 @@ nav.scrolled {
                     }
                 }
                 .container-fluid {
-                    background: #e7f5f8;
+                    // background: #f2f8fc;
                     padding: 20px 0;
                 }
             }
@@ -625,7 +637,7 @@ nav.scrolled {
     .main {
         //footer section
         .footer-section {
-            background-color: #f2f8fc;
+            background-color: white;
 
             footer {
                 .container {
@@ -692,7 +704,8 @@ nav.scrolled {
                             h3 {
                                 text-transform: uppercase;
                                 font-weight: bolder;
-                                margin-bottom: 20px;
+                                margin-bottom: 10px;
+                                font-size: 1.1rem;
                             }
                             li {
                                 line-height: 2;
@@ -701,8 +714,12 @@ nav.scrolled {
                     }
                 }
                 .container-fluid {
-                    background: #e7f5f8;
-                    padding: 20px 0;
+                    // background: #f2f8fc;
+                    padding: 10px 0;
+
+                    small {
+                        font-size: 0.7rem;
+                    }
                 }
             }
         }
@@ -874,7 +891,7 @@ nav.scrolled {
 
         //footer section
         .footer-section {
-            background-color: #f2f8fc;
+            background-color: white;
 
             footer {
                 .container {
@@ -926,17 +943,20 @@ nav.scrolled {
                             h3 {
                                 text-transform: uppercase;
                                 font-weight: bolder;
-                                margin-bottom: 20px;
+                                margin-bottom: 10px;
                             }
                             li {
-                                line-height: 2;
+                                line-height: 25px;
                             }
                         }
                     }
                 }
                 .container-fluid {
-                    background: #e7f5f8;
-                    padding: 20px 0;
+                    // background: #f2f8fc;
+                    padding: 10px 0;
+                    small {
+                        font-size: 0.54rem;
+                    }
                 }
             }
         }

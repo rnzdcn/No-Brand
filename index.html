@@ -12,6 +12,7 @@
         <title>No Brand</title>
     </head>
     <body>
+       
         <!-- navigation  -->
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="container">
@@ -35,6 +36,14 @@
                     data-bs-backdrop="false"
                 >
                     <div class="offcanvas-header">
+                        <ul class="navbar-nav list-unstyled">
+                            <li class="nav-item  d-md-block d-lg-none">
+                        
+                                <a class="nav-link " aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    ><i class="fas fa-user"></i></a>
+                            </li>
+                        </ul>
+                        
                         <button
                             type="button"
                             class="btn-close text-reset ms-auto"
@@ -83,7 +92,7 @@
                     <li
                         class="
                             nav-item
-                            mx-3
+                            mx-2
                             d-md-none d-lg-block d-sm-none d-md-block
                         "
                     >
@@ -94,10 +103,16 @@
                             ><i class="fas fa-search"></i
                         ></a>
                     </li>
-                    <li class="nav-item">
+                   
+                    <li class="nav-item  mx-3">
                         <a class="nav-link" aria-current="page" href="#"
                             ><i class="fas fa-shopping-cart"></i
                         ></a>
+                    </li>
+                    <li class="nav-item  d-md-none d-lg-block d-sm-none d-md-block">
+                        
+                        <a class="nav-link search-icon-item" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            ><i class="fas fa-user"></i></a>
                     </li>
                 </ul>
             </div>
@@ -443,6 +458,33 @@
                 </footer>
             </section>
         </div>
+
+
+        <!-- Modal for Sign-in and Sign up  -->
+        <div class="modal fade" tabindex="-1" id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+       
+
+        
+        
     </body>
     <script src="./assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./assets/fonts/fontawesome/js/brands.js"></script>
@@ -450,4 +492,31 @@
     <script src="./assets/fonts/fontawesome/js/fontawesome.js"></script>
 
     <script src="./js/main.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        var header = $('.hero-bg');
+        
+        var backgrounds = new Array(
+            'url("./assets/images/background/hero-bg.png")'
+
+            ,'url("./assets/images/background/hero-bg-2.jpg")'
+            ,'url("./assets/images/background/hero-bg-3.jpg")'
+         
+         
+        );
+        
+        var current = 0;
+        
+        function nextBackground() {
+            current++;
+            current = current % backgrounds.length;
+            header.css('background-image', backgrounds[current]);
+        }
+        setInterval(nextBackground, 4000 );
+        
+        header.css('background-image', backgrounds[0]);
+        });
+        </script> -->
+    
 </html>
